@@ -260,6 +260,8 @@
       }
 
       .swiper-scrollbar {
+        rotate: 90deg;
+        margin-top: 30px;
         display: flex;
         margin-left: 490px;
         background: #FF5722;
@@ -300,9 +302,878 @@
   }
 }
 
-#number{
-  padding: 100px;
-  .number-general{
+#accountant {
+  .accountant-general {
+    display: flex;
+    justify-content: space-around;
 
+    &__numbers {
+      display: flex;
+
+      &__major {
+        display: flex;
+        margin-right: 100px;
+        margin-bottom: 70px;
+
+        .fa-people-roof {
+          color: #0D2C4A;
+          font-size: 30px;
+          margin-right: 20px;
+        }
+
+        .fa-flag {
+          color: #0D2C4A;
+          font-size: 30px;
+          margin-right: 20px;
+        }
+
+        .fa-user {
+          color: #0D2C4A;
+          font-size: 30px;
+          margin-right: 20px;
+        }
+
+        .fa-building-wheat {
+          color: #0D2C4A;
+          font-size: 30px;
+          margin-right: 20px;
+        }
+
+        .fa-wifi {
+          color: #0D2C4A;
+          font-size: 30px;
+          margin-right: 20px;
+        }
+
+        .fa-user-group {
+          color: #0D2C4A;
+          font-size: 30px;
+          margin-right: 20px;
+        }
+      }
+
+      &__of-numbers {
+        &__title {
+          font-family: 'Lucida Fax', sans-serif;
+          font-weight: 400;
+          font-size: 32px;
+          color: #10375C;
+        }
+
+        &__desc {
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          color: #9A9A9A;
+        }
+      }
+    }
+
+    &__blue-bg {
+
+      background: #10375C;
+      padding: 50px 35px;
+
+      &__major {
+        display: flex;
+        align-items: center;
+
+        &__title {
+          font-family: 'Lato', sans-serif;
+          font-weight: 500;
+          font-size: 20px;
+          color: #FFFFFF;
+          margin-right: 10px;
+          margin-bottom: 30px;
+        }
+
+        &__line {
+          position: relative;
+          bottom: 15px;
+          width: 73px;
+          height: 2px;
+          background: white;
+        }
+      }
+
+
+      &__title {
+        font-family: 'Lucida Fax', sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+      }
+
+      &__desc {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+#topic {
+  padding: 100px;
+
+  .topic-general {
+    &__major {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      h1 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: #222831;
+        margin-right: 10px;
+      }
+    }
+
+    &__line {
+      width: 73px;
+      height: 2px;
+      background: #222831;
+    }
+
+    &__general-title {
+      h1 {
+        font-family: 'Lucida Fax', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        color: #10375C;
+      }
+
+
+    }
+  }
+}
+
+#scrollbar {
+
+  .scrollbar-general {
+    display: flex;
+    justify-content: space-around;
+
+    h1 {
+
+      width: 240px;
+      padding: 15px 20px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      color: black;
+      cursor: pointer;
+      transition: .4s;
+      margin-bottom: 15px;
+
+      &:hover {
+        background: #FF5722;
+        color: white;
+        box-shadow: 0 4px 16px rgba(241, 65, 9, 0.58);;
+      }
+    }
+  }
+}
+
+#swiper {
+  padding: 100px;
+
+  .swiper-general {
+    position: absolute;
+    left: 730px;
+
+    &__line-tit {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+
+      h1 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: #222831;
+        margin-right: 10px;
+      }
+
+      &__line {
+        width: 73px;
+        height: 2px;
+        background: #222831;
+      }
+    }
+
+    &__title {
+
+      font-family: 'Lucida Fax', sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      color: #10375C;
+    }
+  }
+}
+
+#real-swiper {
+  padding: 100px;
+
+  .real-swiper-general {
+    .swiper-slide {
+      .brown {
+        width: 430px;
+        height: 400px;
+      }
+
+      .conference {
+        width: 430px;
+        height: 400px;
+      }
+    }
+
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-button-prev {
+      color: #FF5722;
+      border-radius: 30px;
+    }
+
+    .swiper-button-next {
+      color: #FF5722;
+      border-radius: 30px;
+    }
+  }
+}
+
+#who {
+  padding: 50px;
+
+  .who-general {
+    h1 {
+      font-family: 'Lucida Fax', sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+      color: #0D2C4A;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      text-align: center;
+      color: #9A9A9A;
+    }
+  }
+}
+
+#sponsors {
+  padding: 20px;
+
+  .sponsors-general {
+    text-align: center;
+
+    &__logos {
+      img {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+#story-tit {
+  padding: 60px;
+
+  .story-tit-general {
+    &__title-line {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+
+      h1 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: #222831;
+        margin-right: 10px;
+      }
+
+      &__line {
+        width: 73px;
+        height: 2px;
+        background: #222831;
+      }
+    }
+
+    &__title {
+      font-family: 'Lucida Fax', sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      color: #10375C;
+    }
+  }
+}
+
+#stories {
+  padding: 10px;
+
+  .stories-general {
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &__block {
+      background: #10375C;
+      padding: 40px 30px;
+      width: 445px;
+
+      h1 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+        margin-bottom: 100px;
+        line-height: 30px;
+      }
+
+      &__profile {
+        display: flex;
+        align-items: center;
+
+        &__image {
+          margin-right: 20px;
+        }
+
+        &__text {
+
+          h1 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            color: #FFFFFF;
+            margin-bottom: 6px;
+          }
+
+          p {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #FFFFFF;
+          }
+
+        }
+      }
+    }
+
+
+  }
+}
+
+#orange-tit {
+  padding: 100px;
+
+  .orange-tit-general {
+    &__title {
+      font-family: 'Lucida Fax', sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+      text-align: center;
+      color: #10375C;
+    }
+  }
+}
+
+#orange {
+  padding: 30px;
+
+  .orange-general {
+    background: #FFFFFF;
+    padding: 40px 30px;
+    width: 300px;
+    height: 141px;
+    color: black;
+
+    text-align: center;
+    box-shadow: 0 4px 16px darkgrey;
+    transition: .4s;
+    cursor: pointer;
+
+    &:hover {
+      background: #FF5722;
+      color: #FFFFFF;
+      box-shadow: 0 4px 16px #FF5722;
+
+    }
+
+    &__major-block {
+      margin-bottom: 40px;
+
+      &__orange-block {
+        &__title {
+          margin-top: 20px;
+          font-family: 'Lucida Fax', sans-serif;
+          font-weight: 400;
+          font-size: 26px;
+        }
+      }
+
+      &__button {
+        box-shadow: 0 4px 16px white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 64px;
+        height: 48px;
+        background: #FF5722;
+        margin-left: 110px;
+        margin-top: 70px;
+        cursor: pointer;
+        transition: .4s;
+
+        &:hover {
+          transform: scale(1.1);
+          background: white;
+
+        }
+
+        .fa-angle-down {
+          padding: 10px 15px;
+          color: #FFFFFF;
+          transition: .4s;
+          font-size: 27px;
+
+          &:hover {
+            color: #FF5722;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+#link {
+  padding: 30px;
+
+  .link-general {
+    &__orange-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__orange-desc {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FF5722;
+        margin-right: 15px;
+      }
+
+      .fa-chevron-right {
+        color: #FF5722;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#vlog-tit {
+  padding: 70px;
+
+  .vlog-tit-general {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title {
+      font-family: 'Lucida Fax', sans-serif;
+      font-weight: 700;
+      font-size: 40px;
+
+      color: #10375C;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+
+      &__title2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FF5722;
+        margin-right: 15px;
+      }
+
+      .fa-chevron-right {
+        color: #FF5722;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#vlog {
+  .vlog-general {
+    display: flex;
+    justify-content: space-between;
+
+    &__ceo {
+      display: flex;
+      margin-right: 20px;
+
+      img {
+      }
+
+      &__story {
+        width: 380px;
+        height: 320px;
+        background: #ececec;
+        padding: 20px 20px;
+
+        &__text {
+          &__title {
+            font-family: 'Lucida Fax', sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            color: #222831;
+            margin-bottom: 30px;
+          }
+
+          &__desc {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #9A9A9A;
+            line-height: 30px;
+            margin-bottom: 45px;
+          }
+        }
+
+        &__profile {
+          display: flex;
+          align-items: center;
+
+          &__text {
+            &__title {
+              font-family: 'Lato', sans-serif;
+              font-weight: 500;
+              font-size: 18px;
+              color: #10375C;
+              margin-bottom: 10px;
+            }
+
+            &__desc {
+              font-family: 'Lato', sans-serif;
+              font-weight: 400;
+              font-size: 16px;
+              color: #9A9A9A;
+            }
+          }
+        }
+
+      }
+    }
+
+    &__laptop {
+      &__text {
+        background: #ececec;
+        width: 300px;
+        height: 116px;
+        padding: 15px 25px;
+
+        &__title {
+          font-family: 'Lucida Fax', sans-serif;
+          font-weight: 400;
+          font-size: 22px;
+          color: #222831;
+          margin-bottom: 20px;
+        }
+
+        &__desc {
+          font-family: 'Lato', sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          color: #9A9A9A;
+
+        }
+      }
+    }
+  }
+}
+
+#vlog2 {
+  padding: 30px;
+
+  .vlog2-general {
+    display: flex;
+    justify-content: space-between;
+
+    &__laptop2 {
+      &__text2 {
+        background: #ececec;
+        width: 300px;
+        height: 116px;
+        padding: 15px 25px;
+
+        &__title2 {
+          font-family: 'Lucida Fax', sans-serif;
+          font-weight: 400;
+          font-size: 22px;
+          color: #222831;
+          margin-bottom: 20px;
+        }
+
+        &__desc2 {
+          font-family: 'Lato', sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          color: #9A9A9A;
+
+        }
+      }
+    }
+  }
+}
+
+#person {
+  padding-top: 100px;
+  background: #10375C;
+
+  .person-general {
+
+    &__main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__left-side {
+        &__tit-line {
+          display: flex;
+          align-items: center;
+
+          &__title {
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            color: #F8F8F8;
+            margin-right: 15px;
+          }
+
+          &__line {
+            width: 73px;
+            height: 2px;
+            background: #F8F8F8;
+          }
+        }
+
+        &__tit-btn {
+          margin-top: 80px;
+
+          &__title {
+            font-family: 'Lucida Fax', sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            color: #FFFFFF;
+            margin-bottom: 20px;
+          }
+
+          &__desc {
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: #DFDFDF;
+            margin-bottom: 50px;
+          }
+
+          &__btn {
+            color: white;
+            width: 350px;
+            height: 53px;
+            border: none;
+            border-radius: 2px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: .4s;
+            background: #FF5722;
+
+            &:hover {
+              background: white;
+              color: #FF5722;
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+
+      &__right-side {
+        &__indus {
+          position: absolute;
+          top: 420.5rem;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  padding: 50px;
+  background: #0D2C4A;
+
+  .footer-general {
+    display: flex;
+    &__main{
+      &__desc {
+        margin-top: 20px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #969696;
+        line-height: 30px;
+      }
+
+      &__last-icons {
+        display: flex;
+        margin-top: 30px;
+
+        .fa-instagram {
+          font-size: 45px;
+          color: white;
+          margin-right: 20px;
+        }
+
+        .fa-youtube {
+          font-size: 45px;
+          color: white;
+          margin-right: 20px;
+        }
+
+        .fa-facebook-f {
+          font-size: 45px;
+          color: white;
+          margin-right: 20px;
+        }
+      }
+    }
+
+
+    &__description{
+      margin-top: 40px;
+      margin-left: 100px;
+      display: flex;
+      justify-content: space-between;
+      &__gen{
+        margin-right: 90px;
+        &__title{
+          font-family: 'Lato',sans-serif;
+          font-weight: 700;
+          font-size: 20px;
+          color: #606060;
+          margin-bottom: 20px;
+        }
+        &__desc{
+          font-family: 'Lato',sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 40px;
+          color: #FFFFFF;
+        }
+      }
+    }
   }
 }
