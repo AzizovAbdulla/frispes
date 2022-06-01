@@ -640,25 +640,28 @@ a {
   padding: 30px;
 }
 #orange .orange-general {
-  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 40px 30px;
-  width: 300px;
-  height: 141px;
-  color: black;
-  text-align: center;
-  box-shadow: 0 4px 16px darkgrey;
-  transition: 0.4s;
-  cursor: pointer;
-}
-#orange .orange-general:hover {
-  background: #FF5722;
-  color: #FFFFFF;
-  box-shadow: 0 4px 16px #FF5722;
 }
 #orange .orange-general__major-block {
-  margin-bottom: 40px;
+  padding: 30px;
+  width: 300px;
+  height: 150px;
+  background: white;
+  box-shadow: 0 4px 16px #ececec;
+  margin-right: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
 }
-#orange .orange-general__major-block__orange-block__title {
+#orange .orange-general__major-block:hover {
+  background: #FF5722;
+  box-shadow: 0 4px 16px #FF5722;
+  color: white;
+}
+#orange .orange-general__major-block__orange-block h1 {
   margin-top: 20px;
   font-family: "Lucida Fax", sans-serif;
   font-weight: 400;
@@ -672,7 +675,7 @@ a {
   width: 64px;
   height: 48px;
   background: #FF5722;
-  margin-left: 110px;
+  margin-left: 95px;
   margin-top: 70px;
   cursor: pointer;
   transition: 0.4s;
