@@ -10,6 +10,7 @@
 
     &__modal {
       display: none;
+
       &__block {
         width: 100%;
         height: 100%;
@@ -50,7 +51,7 @@
             80% {
               transform: scale(1.2);
             }
-            100%{
+            100% {
               transform: scale(1);
             }
           }
@@ -941,134 +942,98 @@
           background: white;
 
         }
+      }
+    }
+  }
 
-        .fa-angle-down {
-          padding: 10px 15px;
-          color: #FFFFFF;
-          transition: .4s;
-          font-size: 27px;
+  #link {
+    padding: 30px;
 
-          &:hover {
-            color: #FF5722;
-          }
+    .link-general {
+      &__orange-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__orange-desc {
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          color: #FF5722;
+          margin-right: 15px;
+        }
+
+        .fa-chevron-right {
+          color: #FF5722;
+          font-size: 20px;
+          cursor: pointer;
         }
       }
     }
-
   }
-}
 
-#link {
-  padding: 30px;
+  #vlog-tit {
+    padding: 70px;
 
-  .link-general {
-    &__orange-link {
+    .vlog-tit-general {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
 
-      &__orange-desc {
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        color: #FF5722;
-        margin-right: 15px;
+      &__title {
+        font-family: 'Lucida Fax', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+
+        color: #10375C;
       }
 
-      .fa-chevron-right {
-        color: #FF5722;
-        font-size: 20px;
-        cursor: pointer;
-      }
-    }
-  }
-}
+      &__link {
+        display: flex;
+        align-items: center;
 
-#vlog-tit {
-  padding: 70px;
-
-  .vlog-tit-general {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    &__title {
-      font-family: 'Lucida Fax', sans-serif;
-      font-weight: 700;
-      font-size: 40px;
-
-      color: #10375C;
-    }
-
-    &__link {
-      display: flex;
-      align-items: center;
-
-      &__title2 {
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        color: #FF5722;
-        margin-right: 15px;
-      }
-
-      .fa-chevron-right {
-        color: #FF5722;
-        font-size: 20px;
-        cursor: pointer;
-      }
-    }
-  }
-}
-
-#vlog {
-  .vlog-general {
-    display: flex;
-    justify-content: space-between;
-
-    &__ceo {
-      display: flex;
-      margin-right: 20px;
-
-      img {
-      }
-
-      &__story {
-        width: 380px;
-        height: 320px;
-        background: #ececec;
-        padding: 20px 20px;
-
-        &__text {
-          &__title {
-            font-family: 'Lucida Fax', sans-serif;
-            font-weight: 700;
-            font-size: 32px;
-            color: #222831;
-            margin-bottom: 30px;
-          }
-
-          &__desc {
-            font-family: 'Lato', sans-serif;
-            font-weight: 400;
-            font-size: 16px;
-            color: #9A9A9A;
-            line-height: 30px;
-            margin-bottom: 45px;
-          }
+        &__title2 {
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          color: #FF5722;
+          margin-right: 15px;
         }
 
-        &__profile {
-          display: flex;
-          align-items: center;
+        .fa-chevron-right {
+          color: #FF5722;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  #vlog {
+    .vlog-general {
+      display: flex;
+      justify-content: space-between;
+
+      &__ceo {
+        display: flex;
+        margin-right: 20px;
+
+        img {
+        }
+
+        &__story {
+          width: 380px;
+          height: 320px;
+          background: #ececec;
+          padding: 20px 20px;
 
           &__text {
             &__title {
-              font-family: 'Lato', sans-serif;
-              font-weight: 500;
-              font-size: 18px;
-              color: #10375C;
-              margin-bottom: 10px;
+              font-family: 'Lucida Fax', sans-serif;
+              font-weight: 700;
+              font-size: 32px;
+              color: #222831;
+              margin-bottom: 30px;
             }
 
             &__desc {
@@ -1076,222 +1041,245 @@
               font-weight: 400;
               font-size: 16px;
               color: #9A9A9A;
+              line-height: 30px;
+              margin-bottom: 45px;
+            }
+          }
+
+          &__profile {
+            display: flex;
+            align-items: center;
+
+            &__text {
+              &__title {
+                font-family: 'Lato', sans-serif;
+                font-weight: 500;
+                font-size: 18px;
+                color: #10375C;
+                margin-bottom: 10px;
+              }
+
+              &__desc {
+                font-family: 'Lato', sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                color: #9A9A9A;
+              }
+            }
+          }
+
+        }
+      }
+
+      &__laptop {
+        &__text {
+          background: #ececec;
+          width: 300px;
+          height: 116px;
+          padding: 15px 25px;
+
+          &__title {
+            font-family: 'Lucida Fax', sans-serif;
+            font-weight: 400;
+            font-size: 22px;
+            color: #222831;
+            margin-bottom: 20px;
+          }
+
+          &__desc {
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #9A9A9A;
+
+          }
+        }
+      }
+    }
+  }
+
+  #vlog2 {
+    padding: 30px;
+
+    .vlog2-general {
+      display: flex;
+      justify-content: space-between;
+
+      &__laptop2 {
+        &__text2 {
+          background: #ececec;
+          width: 300px;
+          height: 116px;
+          padding: 15px 25px;
+
+          &__title2 {
+            font-family: 'Lucida Fax', sans-serif;
+            font-weight: 400;
+            font-size: 22px;
+            color: #222831;
+            margin-bottom: 20px;
+          }
+
+          &__desc2 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #9A9A9A;
+
+          }
+        }
+      }
+    }
+  }
+
+  #person {
+    padding-top: 100px;
+    background: #10375C;
+
+    .person-general {
+      position: relative;
+
+      &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__left-side {
+          &__tit-line {
+            display: flex;
+            align-items: center;
+
+            &__title {
+              font-family: 'Lato', sans-serif;
+              font-weight: 500;
+              font-size: 20px;
+              color: #F8F8F8;
+              margin-right: 15px;
+            }
+
+            &__line {
+              width: 73px;
+              height: 2px;
+              background: #F8F8F8;
+            }
+          }
+
+          &__tit-btn {
+            margin-top: 80px;
+
+            &__title {
+              font-family: 'Lucida Fax', sans-serif;
+              font-weight: 700;
+              font-size: 40px;
+              color: #FFFFFF;
+              margin-bottom: 20px;
+            }
+
+            &__desc {
+              font-family: 'Lato', sans-serif;
+              font-weight: 400;
+              font-size: 20px;
+              color: #DFDFDF;
+              margin-bottom: 50px;
+            }
+
+            &__btn {
+              color: white;
+              width: 350px;
+              height: 53px;
+              border: none;
+              border-radius: 2px;
+              font-size: 20px;
+              cursor: pointer;
+              transition: .4s;
+              background: #FF5722;
+
+              &:hover {
+                background: white;
+                color: #FF5722;
+                transform: scale(1.1);
+              }
             }
           }
         }
 
-      }
-    }
-
-    &__laptop {
-      &__text {
-        background: #ececec;
-        width: 300px;
-        height: 116px;
-        padding: 15px 25px;
-
-        &__title {
-          font-family: 'Lucida Fax', sans-serif;
-          font-weight: 400;
-          font-size: 22px;
-          color: #222831;
-          margin-bottom: 20px;
-        }
-
-        &__desc {
-          font-family: 'Lato', sans-serif;
-          font-weight: 500;
-          font-size: 16px;
-          color: #9A9A9A;
-
+        &__right-side {
+          &__indus {
+            position: absolute;
+            top: -13px;
+          }
         }
       }
     }
   }
-}
 
-#vlog2 {
-  padding: 30px;
+  #footer {
+    padding: 50px;
+    background: #0D2C4A;
 
-  .vlog2-general {
-    display: flex;
-    justify-content: space-between;
-
-    &__laptop2 {
-      &__text2 {
-        background: #ececec;
-        width: 300px;
-        height: 116px;
-        padding: 15px 25px;
-
-        &__title2 {
-          font-family: 'Lucida Fax', sans-serif;
-          font-weight: 400;
-          font-size: 22px;
-          color: #222831;
-          margin-bottom: 20px;
-        }
-
-        &__desc2 {
-          font-family: 'Lato', sans-serif;
-          font-weight: 500;
-          font-size: 16px;
-          color: #9A9A9A;
-
-        }
-      }
-    }
-  }
-}
-
-#person {
-  padding-top: 100px;
-  background: #10375C;
-
-  .person-general {
-    position: relative;
-
-    &__main {
+    .footer-general {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
 
-      &__left-side {
-        &__tit-line {
+      &__main {
+        &__desc {
+          margin-top: 20px;
+          font-family: 'Lato', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          color: #969696;
+          line-height: 30px;
+        }
+
+        &__last-icons {
           display: flex;
-          align-items: center;
+          margin-top: 30px;
+
+          .fa-instagram {
+            font-size: 45px;
+            color: white;
+            margin-right: 20px;
+          }
+
+          .fa-youtube {
+            font-size: 45px;
+            color: white;
+            margin-right: 20px;
+          }
+
+          .fa-facebook-f {
+            font-size: 45px;
+            color: white;
+            margin-right: 20px;
+          }
+        }
+      }
+
+
+      &__description {
+        margin-top: 40px;
+        margin-left: 100px;
+        display: flex;
+        justify-content: space-between;
+
+        &__gen {
+          margin-right: 90px;
 
           &__title {
             font-family: 'Lato', sans-serif;
-            font-weight: 500;
-            font-size: 20px;
-            color: #F8F8F8;
-            margin-right: 15px;
-          }
-
-          &__line {
-            width: 73px;
-            height: 2px;
-            background: #F8F8F8;
-          }
-        }
-
-        &__tit-btn {
-          margin-top: 80px;
-
-          &__title {
-            font-family: 'Lucida Fax', sans-serif;
             font-weight: 700;
-            font-size: 40px;
-            color: #FFFFFF;
+            font-size: 20px;
+            color: #606060;
             margin-bottom: 20px;
           }
 
           &__desc {
             font-family: 'Lato', sans-serif;
             font-weight: 400;
-            font-size: 20px;
-            color: #DFDFDF;
-            margin-bottom: 50px;
+            font-size: 16px;
+            line-height: 40px;
+            color: #FFFFFF;
           }
-
-          &__btn {
-            color: white;
-            width: 350px;
-            height: 53px;
-            border: none;
-            border-radius: 2px;
-            font-size: 20px;
-            cursor: pointer;
-            transition: .4s;
-            background: #FF5722;
-
-            &:hover {
-              background: white;
-              color: #FF5722;
-              transform: scale(1.1);
-            }
-          }
-        }
-      }
-
-      &__right-side {
-        &__indus {
-          position: absolute;
-          top: -13px;
         }
       }
     }
   }
-}
-
-#footer {
-  padding: 50px;
-  background: #0D2C4A;
-
-  .footer-general {
-    display: flex;
-
-    &__main {
-      &__desc {
-        margin-top: 20px;
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        color: #969696;
-        line-height: 30px;
-      }
-
-      &__last-icons {
-        display: flex;
-        margin-top: 30px;
-
-        .fa-instagram {
-          font-size: 45px;
-          color: white;
-          margin-right: 20px;
-        }
-
-        .fa-youtube {
-          font-size: 45px;
-          color: white;
-          margin-right: 20px;
-        }
-
-        .fa-facebook-f {
-          font-size: 45px;
-          color: white;
-          margin-right: 20px;
-        }
-      }
-    }
-
-
-    &__description {
-      margin-top: 40px;
-      margin-left: 100px;
-      display: flex;
-      justify-content: space-between;
-
-      &__gen {
-        margin-right: 90px;
-
-        &__title {
-          font-family: 'Lato', sans-serif;
-          font-weight: 700;
-          font-size: 20px;
-          color: #606060;
-          margin-bottom: 20px;
-        }
-
-        &__desc {
-          font-family: 'Lato', sans-serif;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 40px;
-          color: #FFFFFF;
-        }
-      }
-    }
-  }
-}
